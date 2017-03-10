@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/post_markdown_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+
+        android:isScrollContainer="false"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp">
+        <EditText
+            android:id="@+id/post_title_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:hint="@string/post_title_hint"
+            android:imeOptions="actionDone"
+            android:inputType="text|textCapSentences"
+            android:textAppearance="@style/TextAppearance.Large.Light"
+            tools:text="My awesome post title"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/holo_blue_dark"
+            />
+        <EditText
+            android:id="@+id/post_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:hint="@string/post_body_hint"
+            android:inputType="text|textMultiLine|textLongMessage|textCapSentences"
+            android:padding="16dp"
+            android:textAppearance="@style/TextAppearance.Light"
+            android:textColorHint="@color/text_secondary"
+
+            />
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            android:visibility="visible">
+            <ImageButton
+                android:id="@+id/photoPickerButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@android:drawable/ic_menu_gallery" />
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="B"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

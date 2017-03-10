@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RubaruDuniya</string>
+    <string name="quesmark">\?</string>
+    <string name="post_title_hint">Give your post a title</string>
+    <string name="post_body_hint">Type something here…</string>
+
+</resources>
