@@ -1,27 +1,39 @@
 package com.samiapps.kv.rubaruduniya;
 
+import android.os.Parcelable;
+import android.support.v4.os.ParcelableCompat;
+
+import java.io.Serializable;
+
 /**
  * Created by KV on 7/3/17.
  */
 
-public class rubaruduniya {
+public class rubaruduniya implements Serializable {
     private String title;
     private String content;
     private String photoUrl;
     private Boolean saved;
-    private int i=1;
+
     public rubaruduniya()
     {
 
     }
-   public rubaruduniya(Boolean saved,String title,String content,String photoUrl,int i)
+
+
+
+    public void setSaved(Boolean saved) {
+        this.saved = saved;
+    }
+
+    public rubaruduniya(Boolean saved, String title, String content, String photoUrl)
    {
        this.saved=saved;
        this.title=title;
        this.content=content;
        this.photoUrl=photoUrl;
 
-       this.i=i;
+
    }
     public void setTitle(String title)
     {
@@ -33,6 +45,11 @@ public class rubaruduniya {
         return title;
 
     }
+    /*public String getImage()
+    {
+        return photoUrl;
+    }
+    */
     public Boolean getSaved()
     {
         return saved;

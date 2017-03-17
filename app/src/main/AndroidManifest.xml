@@ -12,16 +12,23 @@
         android:theme="@style/AppTheme"
         tools:overrideLibrary="com.firebase.ui.auth"
     >
-        <activity android:name=".MainActivity">
+        <activity android:name="com.samiapps.kv.rubaruduniya.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".writePage"
-            android:windowSoftInputMode="adjustResize">
+        <activity android:name="com.samiapps.kv.rubaruduniya.writePage"
+
+
+            >
         </activity>
+        <activity android:name=".ArticleDetail"></activity>
     </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>
